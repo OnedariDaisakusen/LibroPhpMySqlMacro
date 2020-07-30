@@ -12,6 +12,7 @@
                     <th scope="col">Serie</th>
                     <th scope="col">Marca</th>
                     <th scope="col">Pais</th>
+                    <th>Opciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -25,6 +26,9 @@
                     <td><?php echo $key[2]; ?></td>
                     <td><?php echo $key[3]; ?></td>
                     <td><?php echo utf8_encode($key[4]); ?></td>
+                    <td><a href="actualizar.php?idProd=<?php echo $key[0]; ?>" class="btn btn-info">Modificar</a></td>
+                    <td><a href="eliminar.php?idProd=<?php echo $key[0]; ?>" class="btn btn-danger">Eliminar</a></td>
+
                 </tr>
 
                 <?php
